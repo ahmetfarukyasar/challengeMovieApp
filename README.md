@@ -1,115 +1,113 @@
-
 # challengeMovieApp
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 [![React Version](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
 
-**challengeMovieApp**, TMDB API kullanarak film verilerini listeleyen, detaylarını gösteren ve kullanıcıların favori filmlerini yönetebildiği modern bir React uygulamasıdır.  
-Kullanıcı dostu arayüzü, filtreleme ve favorilere ekleme gibi özellikleriyle film keşfetmeyi kolaylaştırır.
+**challengeMovieApp** is a modern React application that lists movie data using the TMDB API, displays detailed information, and allows users to manage their favorite movies.  
+With a user-friendly interface, filtering options, and favorite management, it makes exploring movies easier.
 
 ---
 
-## İçindekiler
+## Table of Contents
 
-- [Özellikler](#özellikler)  
-- [Kurulum](#kurulum)  
-- [Kullanım](#kullanım)  
-- [Teknolojiler](#teknolojiler)  
-- [API Anahtarı](#api-anahtarı)  
-- [Katkıda Bulunma](#katkıda-bulunma)  
-- [Lisans](#lisans)  
-
----
-
-## Özellikler
-
-- Popüler filmleri listeleme  
-- Film detaylarını görüntüleme (özeti, çıkış tarihi, vb.)  
-- Film türlerine göre filtreleme  
-- Yıllara göre filtreleme  
-- Favori filmleri ekleyip çıkartma  
-- Responsive ve hızlı arayüz  
-- Çevresel değişkenler ile API anahtarı yönetimi  
+- [Features](#features)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Technologies](#technologies)  
+- [API Key](#api-key)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
 ---
 
-## Kurulum
+## Features
 
-Projeyi yerel ortamınıza klonlayın:
+- List popular movies  
+- View movie details (overview, release date, etc.)  
+- Filter movies by genre  
+- Filter movies by year  
+- Add/remove movies from favorites  
+- Manage API key securely using environment variables  
+
+---
+
+## Installation
+
+Clone the project to your local environment:
 
 ```bash
 git clone https://github.com/ahmetfarukyasar/challengeMovieApp.git
 cd challengeMovieApp
 ```
 
-Gerekli bağımlılıkları yükleyin:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-`.env` dosyasını oluşturun ve TMDB API anahtarınızı ekleyin:
+Create a `.env` file and add your TMDB API key:
 
 ```env
 VITE_API_KEY=your_tmdb_api_key_here
 ```
 
-Projeyi başlatın:
+Start the project:
 
 ```bash
 npm run dev
 ```
 
-Tarayıcınızda `http://localhost:5173` adresine giderek uygulamayı görüntüleyebilirsiniz.
+Open `http://localhost:5173` in your browser to view the application.
 
 ---
 
-## Kullanım
+## Usage
 
-- Ana sayfada popüler filmler listelenir.  
-- Film kartlarına tıklayarak detay sayfasına geçebilirsiniz.  
-- Sağ üstteki filtre alanlarından tür ve yıl seçerek listeyi daraltabilirsiniz.  
-- Her film kartındaki kalp simgesine tıklayarak favorilerinize ekleyebilirsiniz. Favoriler context ile yönetilmektedir.  
+- The homepage displays a list of popular movies.  
+- Click on a movie card to view its detail page.  
+- Use the filter section in the top right to narrow the list by genre or year.  
+- Click the heart icon on a movie card to add it to your favorites. Favorites are managed using React Context.  
 
 ---
 
-## Teknolojiler
+## Technologies
 
 - React 18  
 - Vite (React build tool)  
 - Tailwind CSS  
-- Axios (HTTP istemcisi)  
+- Axios (HTTP client)  
 - React Router  
 - React Context API  
 - TMDB (The Movie Database) API  
 
 ---
 
-## API Anahtarı
+## API Key
 
-Bu proje TMDB API’sini kullanmaktadır.  
-TMDB API anahtarınızı [https://www.themoviedb.org/](https://www.themoviedb.org/) adresinden ücretsiz olarak alabilirsiniz.  
-Anahtarı `.env` dosyasına `VITE_API_KEY` olarak eklemeyi unutmayınız.
-
----
-
-## Katkıda Bulunma
-
-Projeye katkı yapmak isterseniz, lütfen şu adımları takip edin:
-
-1. Forklayın ve yerel kopyanızı oluşturun.  
-2. Yeni bir branch açın (`git checkout -b feature/özellik-adi`).  
-3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`).  
-4. Branch’e pushlayın (`git push origin feature/özellik-adi`).  
-5. Pull request gönderin.  
-
-Her türlü öneri ve hatalar için issue açabilirsiniz.
+This project uses the TMDB API.  
+You can get a free TMDB API key from [https://www.themoviedb.org/](https://www.themoviedb.org/).  
+Add the key to your `.env` file as `VITE_API_KEY`.
 
 ---
 
-## Lisans
+## Contributing
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+If you would like to contribute to the project, please follow these steps:
+
+1. Fork the repository and create your local copy.  
+2. Create a new branch (`git checkout -b feature/feature-name`).  
+3. Commit your changes (`git commit -m 'Added new feature'`).  
+4. Push to the branch (`git push origin feature/feature-name`).  
+5. Submit a pull request.  
+
+Issues and suggestions are welcome.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
